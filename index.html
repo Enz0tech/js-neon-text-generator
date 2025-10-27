@@ -90,16 +90,37 @@
     transition: all 0.3s ease;
   }
 
-  .copy-button:hover {
-    color: #111;
-    background: #00c8ff;
-    box-shadow: 0 0 40px #00c8ff;
+  /*Hover on touch pads*/
+  @media (hover: hover) {
+    .copy-button:hover {
+      color: #111;
+      background: #00c8ff;
+      box-shadow: 0 0 40px #00c8ff;
+    }
+
+    .copy-button:active {
+      transform: scale(0.95);
+    }
   }
 
-  .copy-button:active {
-    transform: scale(0.95);
-  }
 
+  /*Adaptive*/
+  @media (max-width: 481px) {
+    body {
+      padding-inline: 5px;
+    }
+    
+    textarea {
+      width: 100%;
+    }
+
+    .blur-wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+  }
+  
 </style>
 
 
