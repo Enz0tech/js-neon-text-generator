@@ -87,7 +87,7 @@
     cursor: pointer;
     text-shadow: 0 0 10px #00c8ff;
     box-shadow: 0 0 20px #11ff00, inset 0 0 10px #11ff00;
-    transition: all 0.3s ease;
+    transition: 0.3s;
   }
 
   /*Hover on touch pads*/
@@ -304,8 +304,9 @@
 
         .pulsating-active { 
           animation-name: pulsating;
-          animation-duration: 2s;
+          animation-duration: 2.5s;
           animation-iteration-count: infinite;
+          animation-direction: alternate;
         }
       }`      
 
